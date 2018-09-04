@@ -3,9 +3,9 @@ import React from "react";
 
 const styles = {
     outerDiv: {
-      height: 500,
-      width: 700,
-        margin: "pink 2px solid"
+        height: 500,
+        width: 700,
+        position: "relative",
     },
     img: {
         height: 500,
@@ -14,14 +14,15 @@ const styles = {
     },
     caption: {
         position: "absolute",
-        bottom: "10%"
+        bottom: "10%",
+        left: "10%"
     },
     leftPress: {
         position: "absolute",
         width: "50%",
         height: "100%",
         backgroundColor: "orange",
-        opacity: 0.2,
+        opacity: 0.3,
     },
     rightPress: {
         position: "absolute",
@@ -29,7 +30,7 @@ const styles = {
         left: "50%",
         height: "100%",
         backgroundColor: "green",
-        opacity: 0.2,
+        opacity: 0.3,
     }
 };
 
@@ -53,14 +54,14 @@ export default class PhotoGallery extends React.Component {
     }
 
     handleLeftPress() {
-        if(this.state.currentIdx === 0) return;
+        if (this.state.currentIdx === 0) return;
         this.setState({
             currentIdx: this.state.currentIdx - 1
         });
     }
 
     handleRightPress() {
-        if(this.state.currentIdx === this.props.data.length - 1) return;
+        if (this.state.currentIdx === this.props.data.length - 1) return;
         this.setState({
             currentIdx: this.state.currentIdx + 1
         });
@@ -71,19 +72,18 @@ export default class PhotoGallery extends React.Component {
         const {data} = this.props;
         const {currentIdx} = this.state;
         return (
-          <div style={styles.outerDiv}>
-              <img src={data[currentIdx].url} style={styles.img}/>
+            <div style={styles.outerDiv}>
+                <img src={data[currentIdx].url} style={styles.img}/>
 
-              <span style={styles.caption}>
+                <span style={styles.caption}>
                   {data[currentIdx].caption}
               </span>
 
-              <span style={styles.leftPress} onClick={this.handleLeftPress}></span>
-              <span style={styles.rightPress} onClick={this.handleRightPress}></span>
-          </div>
+                <span style={styles.leftPress} onClick={this.handleLeftPress}></span>
+                <span style={styles.rightPress} onClick={this.handleRightPress}></span>
+            </div>
         );
     }
-
 
 
 }
