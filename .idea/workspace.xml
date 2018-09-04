@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dbea858-81dc-4753-b80d-32f59bd6c4a9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/exercise1.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/DemoRequestHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/Person.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/DemoRequestHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/Person$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/Person.class" afterPath="" />
-    </list>
+    <list default="true" id="4dbea858-81dc-4753-b80d-32f59bd6c4a9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -310,12 +301,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536017602423</updated>
-      <workItem from="1536017609481" duration="5510000" />
+      <workItem from="1536017609481" duration="5593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5510000" />
+    <option name="totallyTimeSpent" value="5593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
