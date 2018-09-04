@@ -18,7 +18,7 @@ public class DemoRequestHandler {
         final List<Person> peopleList = new ArrayList<>();
         people.forEach(p -> peopleList.add(p));
 
-        Comparator<Person> customComparator = Comparator.nullsLast(getPersonComparator(sortField, asc));
+        Comparator<Person> customComparator = getPersonComparator(sortField, asc);
 
         Collections.sort(peopleList, customComparator);
         return peopleList;
