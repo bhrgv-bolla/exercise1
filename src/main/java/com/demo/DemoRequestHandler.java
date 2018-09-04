@@ -49,6 +49,8 @@ public class DemoRequestHandler {
 
         System.out.println(sortedPeople2);
 
+        sort(people, "A FIELD THAT iSn't there", "true");
+
 
 
     }
